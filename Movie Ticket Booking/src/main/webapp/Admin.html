@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff4500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="date"], input[type="number"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #ff4500;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6347;
+}
+
+input[type="submit"]:active {
+    background-color: #d32f2f;
+}
+
+/* Style select elements */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("https://cdn.jsdelivr.net/gh/thexpensivestripclub/css-select-arrow-icon/images/arrow-down.png") no-repeat right #fff;
+    background-size: 15px;
+    padding-right: 25px;
+}
+
+/* Style select on focus */
+select:focus {
+    outline: none;
+    border-color: #ff4500;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<marquee><h1>Movie Booking</h1></marquee>
+
+<form action="Third" method="post">
+
+Enter Your UserId <input type="text" name="user" required><br><br>
+
+  
+
+
+Select Movie :
+ <select name="movie">
+    <option value="OG">OG</option>
+    <option value="Animal">Animal</option>
+    <option value="Ae Dil Hai Mushkil">Ae Dil Hai Mushkil</option>
+    <option value="Kabir Singh">Kabir Singh</option>
+  </select>
+  <br><br>
+ Select Theatre :
+ <select name="theatre">
+    <option value="Sandhya">Sandhya</option>
+    <option value="Devi">Devi</option>
+    <option value="DSL">DSL</option>
+    <option value="PVR">PVR</option>
+  </select>
+  <br><br>
+  Select Date : <input type="date"  name="date">
+    <br><br>
+  Select Time : 
+  	<select name="time">
+    <option value="8:00 AM">8:00 AM</option>
+    <option value="11:00 AM">11:00 AM</option>
+    <option value="2:00 PM">2:00 PM</option>
+    <option value="5:00 PM">5:00 PM</option>
+    <option value="8:00 PM">8:00 PM</option>
+  </select>
+  <br><br>
+  Number of Tickets : <input type="number" name="tickets" min="1" max="10" >
+  
+  <input type="submit" value="Book">
+  
+ 	
+
+</form>
+
+
+</body>
+</html>

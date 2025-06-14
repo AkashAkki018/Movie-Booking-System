@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <servlet>
+  <servlet-name> Anurag1</servlet-name>
+  <servlet-class>p1.RegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Anurag1</servlet-name>
+  <url-pattern>/First</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name> Anurag2</servlet-name>
+  <servlet-class>p1.ValidUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Anurag2</servlet-name>
+  <url-pattern>/Second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name> Anurag3</servlet-name>
+  <servlet-class>p1.BookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Anurag3</servlet-name>
+  <url-pattern>/Third</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name> Anurag4</servlet-name>
+  <servlet-class>p1.Tickets</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Anurag4</servlet-name>
+  <url-pattern>/Fourth</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
